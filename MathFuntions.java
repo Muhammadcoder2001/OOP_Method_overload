@@ -2,20 +2,20 @@ package OOP_method_overlaoding;
 
 public class MathFuntions {
 
-    public  void add(int a, int b){
-        System.out.println(a + b);
+    public  int add(int a, int b){
+        return a + b;
     }
 
     public int substarct(int a , int b){
         return a - b;
     }
 
-    public  double multiply(int a, int b){
+    public  int multiply(int a, int b){
         return  a * b;
     }
 
     public double divide(int a , int b){
-        return a / b;
+        return (double) a / b;
     }
 
     public int abs(int num){
@@ -27,10 +27,18 @@ public class MathFuntions {
         }
     }
 
-    public double POW(int num){
+    public int POW(int num){
         return  num * num;
     }
 
-
+    public static void main(String[] args) {
+        MathFuntions function = new MathFuntions();
+        System.out.println(function.add(4, 5));
+        System.out.println(function.abs(-12));
+        System.out.println(function.divide(3, 2));
+        System.out.println(function.POW(3));
+        System.out.println(function.substarct(4, 5));
+        System.out.println(function.multiply(3 , 2));
+    }
 
 }
