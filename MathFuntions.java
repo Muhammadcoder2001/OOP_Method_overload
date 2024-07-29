@@ -6,17 +6,31 @@ public class MathFuntions {
         System.out.println(a + b);
     }
 
-    public void substarct(int a , int b){
-        System.out.println(a - b);
+    public int substarct(int a , int b){
+        return a - b;
     }
 
-    public  void multiply(int a, int b){
-        System.out.println(a * b);
+    public  double multiply(int a, int b){
+        return  a * b;
     }
 
-    public void divide(int a , int b){
-        System.out.println( a / b);
+    public double divide(int a , int b){
+        return a / b;
     }
+
+    public int abs(int num){
+        if (num < 0){
+            return num * -1;
+        }
+        else {
+            return  num;
+        }
+    }
+
+    public double POW(int num){
+        return  num * num;
+    }
+
 
 
 }
